@@ -1,0 +1,33 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run ARTHA AI backend",
+			"type": "shell",
+			"command": "C:\\Users\\lenovo\\Documents\\ecnomic inteligence\\.venv\\Scripts\\python.exe",
+			"args": [
+				"backend\\app.py"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Run ARTHA AI frontend",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"exec",
+				"--yes",
+				"--package",
+				"vite",
+				"--",
+				"vite",
+				"--host",
+				"127.0.0.1",
+				"frontend"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		}
+	]
+}
